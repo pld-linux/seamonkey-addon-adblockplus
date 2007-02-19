@@ -12,6 +12,7 @@ Source0:	http://releases.mozilla.org/pub/mozilla.org/extensions/%{_realname}/%{_
 Source1:	adblockplus-installed-chrome.txt
 URL:		http://adblockplus.org/
 BuildRequires:	unzip
+BuildRequires:	zip
 Requires(post,postun):	seamonkey >= 1.0
 Requires:	seamonkey >= 1.0
 BuildArch:	noarch
@@ -44,6 +45,15 @@ install -d $RPM_BUILD_ROOT%{_datadir}/seamonkey
 install -d $RPM_BUILD_ROOT%{_libdir}/seamonkey
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT
+
+# fix polish locale
+PWD=`pwd`
+cd $RPM_BUILD_ROOT/chrome/
+unzip adblockplus.jar locale/pl-PL/contents.rdf
+sed -i -e 's/locale:pl/locale:pl-PL/g' locale/pl-PL/contents.rdf
+zip -0 adblockplus.jar locale/pl-PL/contents.rdf
+cd $PWD
+
 install %{SOURCE1} $RPM_BUILD_ROOT/chrome
 mv $RPM_BUILD_ROOT/defaults/preferences $RPM_BUILD_ROOT/defaults/pref
 mv $RPM_BUILD_ROOT/{chrome,defaults} $RPM_BUILD_ROOT%{_datadir}/seamonkey
