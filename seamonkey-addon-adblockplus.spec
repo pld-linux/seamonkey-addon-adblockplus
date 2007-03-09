@@ -1,5 +1,5 @@
 Summary:	Extension for blocking unwanted ads, banners etc.
-Summary(pl):	Rozszerzenie do blokowania niechcianych reklam, bannerów itp.
+Summary(pl.UTF-8):	Rozszerzenie do blokowania niechcianych reklam, bannerÃ³w itp.
 %define		_realname	adblock_plus
 Name:		seamonkey-addon-adblockplus
 Version:	0.7.2.4
@@ -27,15 +27,15 @@ downloaded again. Or open Adblock Plus sidebar to see all elements of
 the page and block the banners. You can use filters with wildcards or
 even regular expressions to block complete banner factories.
 
-%description -l pl
-Czy denerwuj± Ciê te wszystkie reklamy i bannery, których za³adowanie
-czêsto trwa d³u¿ej ni¿ wczytanie w³a¶ciwej tre¶ci strony? Adblock Plus
-pomo¿e Ci siê ich pozbyæ. Kliknij prawym przyciskiem myszki na
-bannerze i wybierz "Adblock" z menu kontekstowego - banner ju¿ wiêcej
-siê nie wy¶wietli. Mo¿esz te¿ otworzyæ panel Adblock Plus aby zobaczyæ
-listê wszystkich elementów strony i zablokowaæ bannery. Mo¿liwe
-równie¿ jest tworzenie filtrów u¿ywaj±cych masek lub nawet wyra¿eñ
-regularnych aby umo¿liwiæ blokowanie ca³ych serwisów reklamowych.
+%description -l pl.UTF-8
+Czy denerwujÄ… CiÄ™ te wszystkie reklamy i bannery, ktÃ³rych zaÅ‚adowanie
+czÄ™sto trwa dÅ‚uÅ¼ej niÅ¼ wczytanie wÅ‚aÅ›ciwej treÅ›ci strony? Adblock Plus
+pomoÅ¼e Ci siÄ™ ich pozbyÄ‡. Kliknij prawym przyciskiem myszki na
+bannerze i wybierz "Adblock" z menu kontekstowego - banner juÅ¼ wiÄ™cej
+siÄ™ nie wyÅ›wietli. MoÅ¼esz teÅ¼ otworzyÄ‡ panel Adblock Plus aby zobaczyÄ‡
+listÄ™ wszystkich elementÃ³w strony i zablokowaÄ‡ bannery. MoÅ¼liwe
+rÃ³wnieÅ¼ jest tworzenie filtrÃ³w uÅ¼ywajÄ…cych masek lub nawet wyraÅ¼eÅ„
+regularnych aby umoÅ¼liwiÄ‡ blokowanie caÅ‚ych serwisÃ³w reklamowych.
 
 %prep
 
