@@ -7,7 +7,7 @@ Release:	1
 Epoch:		1
 License:	unknown
 Group:		X11/Applications/Networking
-Source0:	http://releases.mozilla.org/pub/mozilla.org/extensions/%{_realname}/%{_realname}-%{version}-fx+fl+zm+tb.xpi
+Source0:	http://releases.mozilla.org/pub/mozilla.org/extensions/adblock_plus/%{_realname}-%{version}-fx+fl+zm+tb.xpi
 # Source0-md5:	bb01339af68b393f8039e4ad0f813a5e
 Source1:	adblockplus-installed-chrome.txt
 URL:		http://adblockplus.org/
