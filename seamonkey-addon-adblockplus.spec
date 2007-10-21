@@ -2,13 +2,13 @@ Summary:	Extension for blocking unwanted ads, banners etc.
 Summary(pl.UTF-8):	Rozszerzenie do blokowania niechcianych reklam, bannerów itp.
 %define		_realname	adblock_plus
 Name:		seamonkey-addon-adblockplus
-Version:	0.7.2.4
+Version:	0.7.5.3
 Release:	1
 Epoch:		1
 License:	unknown
 Group:		X11/Applications/Networking
-Source0:	http://releases.mozilla.org/pub/mozilla.org/extensions/adblock_plus/%{_realname}-%{version}-fx+fl+zm+tb.xpi
-# Source0-md5:	bb01339af68b393f8039e4ad0f813a5e
+Source0:	http://addons.mozilla.org/en-US/firefox/downloads/file/19510/%{_realname}-%{version}-fx+tb+sm+fl.xpi
+# Source0-md5:	90d7fb085d4a8ef6f5f20ddad8b919a0
 Source1:	adblockplus-installed-chrome.txt
 URL:		http://adblockplus.org/
 BuildRequires:	unzip
@@ -52,6 +52,7 @@ cd $RPM_BUILD_ROOT/chrome/
 unzip adblockplus.jar locale/pl-PL/contents.rdf
 sed -i -e 's/locale:pl/locale:pl-PL/g' locale/pl-PL/contents.rdf
 zip -0 adblockplus.jar locale/pl-PL/contents.rdf
+rm -rf locale/pl-PL/contents.rdf
 cd $PWD
 
 install %{SOURCE1} $RPM_BUILD_ROOT/chrome
