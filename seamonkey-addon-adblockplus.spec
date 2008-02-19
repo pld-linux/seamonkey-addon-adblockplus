@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Rozszerzenie do blokowania niechcianych reklam, bannerów itp
 %define		_realname	adblock_plus
 Name:		seamonkey-addon-adblockplus
 Version:	0.7.5.3
-Release:	1
+Release:	2
 Epoch:		1
 License:	unknown
 Group:		X11/Applications/Networking
@@ -15,7 +15,7 @@ BuildRequires:	unzip
 BuildRequires:	zip
 Requires(post,postun):	seamonkey >= 1.0
 Requires:	seamonkey >= 1.0
-BuildArch:	noarch
+#BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
